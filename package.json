@@ -7,10 +7,13 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "node ./server.js",
-    "connect": "ssh -i \"frontendcapstoneproject.pem\" ubuntu@ec2-3-16-22-69.us-east-2.compute.amazonaws.com"
+    "start": "pm2 start ./server.js",
+    "connect": "ssh -i \"frontendcapstoneproject.pem\" ubuntu@ec2-3-16-22-69.us-east-2.compute.amazonaws.com",
+    "end": "pm2 stop all"
   },
-  "keywords": ["proxy"],
+  "keywords": [
+    "proxy"
+  ],
   "author": "Grant Diamond",
   "license": "ISC",
   "dependencies": {
@@ -19,6 +22,7 @@
     "express": "^4.16.4",
     "morgan": "^1.9.0",
     "nodemon": "^1.18.5",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pm2": "^3.2.2"
   }
 }
