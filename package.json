@@ -1,5 +1,5 @@
 {
-  "name": "Etsi Catalog",
+  "name": "etsiproxy",
   "version": "1.0.0",
   "description": "A proxy server for Front End Capstone Project, HRNYC-18",
   "main": "server.js",
@@ -10,7 +10,7 @@
     "start": "node ./server.js",
     "connect": "ssh -i \"frontendcapstoneproject.pem\" ubuntu@ec2-3-16-22-69.us-east-2.compute.amazonaws.com"
   },
-  "keywords": [],
+  "keywords": ["proxy"],
   "author": "Grant Diamond",
   "license": "ISC",
   "dependencies": {
