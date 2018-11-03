@@ -1,0 +1,24 @@
+{
+  "name": "Etsi Catalog",
+  "version": "1.0.0",
+  "description": "A proxy server for Front End Capstone Project, HRNYC-18",
+  "main": "server.js",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "start": "node ./server.js",
+    "connect": "ssh -i \"frontendcapstoneproject.pem\" ubuntu@ec2-3-16-22-69.us-east-2.compute.amazonaws.com"
+  },
+  "keywords": [],
+  "author": "Grant Diamond",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.5",
+    "path": "^0.12.7"
+  }
+}
